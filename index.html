@@ -9,8 +9,6 @@
 <body>
   <header>
     <div class="logo">
-      <!-- simple text logo, swap for image if available -->
-      <img src="" alt="" aria-hidden="true" style="display:none">
       <div class="brand">Niskapi Co.</div>
     </div>
 
@@ -23,7 +21,6 @@
         </div>
       </nav>
 
-      <!-- loginBtn text updates after sign-in to show account; .account-menu appears when signed in -->
       <div class="account-wrap">
         <button class="btn" id="loginBtn">Log in</button>
         <div class="account-menu" id="accountMenu" hidden>
@@ -42,11 +39,9 @@
   </header>
 
   <main>
-    <!-- Full-viewport hero (video placeholder) -->
     <section class="hero-hero" aria-label="Intro">
-      <!-- Replace the inner content of .hero-media with your video element when ready. -->
       <div class="hero-media" id="heroMedia" aria-hidden="true">
-        <!-- Example: add your <video autoplay muted loop playsinline src="..."> here -->
+      <video autoplay muted loop playsinline src="Img_&_Vids/Nescafe_short_mock_product_commercial__using__blender_._.__marvelousdesigner__motion__motiongraphics__motiondesign__3d__animation__3dmodeling__3dart__render.mp4">
       </div>
       <div class="hero-overlay" aria-hidden="true"></div>
       <div class="hero-content">
@@ -65,8 +60,7 @@
       <div class="card">
         <h2>Menu</h2>
         <div class="menu-list">
-          <!-- Each .menu-item uses a background image (replace paths with your images). -->
-          <div class="menu-item" role="button" tabindex="0" data-name="Espresso" data-price="$2.50" aria-label="Espresso">
+          <div class="menu-item" role="button" tabindex="0" data-name="Niskapi Brown" data-price="15" aria-label="Niskapi Brown">
             <div class="img" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('Img_&_Vids/Brown.webp')"></div>
             <div class="menu-overlay">
               <div class="meta">
@@ -76,7 +70,7 @@
             </div>
           </div>
 
-          <div class="menu-item" role="button" tabindex="0" data-name="Cappuccino" data-price="$3.75" aria-label="Cappuccino">
+          <div class="menu-item" role="button" tabindex="0" data-name="Niskapi Klasik" data-price="16" aria-label="Niskapi Klasik">
             <div class="img" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('Img_&_Vids/Klasik.webp')"></div>
             <div class="menu-overlay">
               <div class="meta">
@@ -86,7 +80,7 @@
             </div>
           </div>
 
-          <div class="menu-item" role="button" tabindex="0" data-name="Latte" data-price="$4.00" aria-label="Latte">
+          <div class="menu-item" role="button" tabindex="0" data-name="Niskapi Original" data-price="13" aria-label="Niskapi Original">
             <div class="img" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('Img_&_Vids/Original.webp')"></div>
             <div class="menu-overlay">
               <div class="meta">
@@ -96,7 +90,7 @@
             </div>
           </div>
 
-          <div class="menu-item" role="button" tabindex="0" data-name="Cold Brew" data-price="$3.50" aria-label="Cold Brew">
+          <div class="menu-item" role="button" tabindex="0" data-name="Niskapi Krimy white" data-price="14" aria-label="Niskapi Krimy white">
             <div class="img" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('Img_&_Vids/Krimy.webp')"></div>
             <div class="menu-overlay">
               <div class="meta">
@@ -112,7 +106,6 @@
         <h2>Location</h2>
         <p>Shabu, Nashawara, Nigeria</p>
         <p>Open daily 7am — 6pm</p>
-        <!-- Placeholder for map; replace src with an actual embed if desired -->
         <div style="margin-top:10px;background:rgba(255,255,255,0.02);height:180px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);"><img src="Img_&_Vids/Map.webp" style="max-height: 11rem; min-width: 100%; object-fit: cover;"></div>
       </div>
 
@@ -125,7 +118,6 @@
 
   <footer style="text-align:center;padding:18px;color:var(--muted)">© <span id="year"></span> Niskapi Co.</footer>
 
-  <!-- Login Modal -->
   <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="modal" role="document">
       <h3>Log in</h3>
@@ -140,12 +132,12 @@
     </div>
   </div>
 
-  <!-- Toast / notice for login-required actions -->
+
   <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
     <div class="toast-inner">Oops — looks like you need to log in to order.</div>
   </div>
 
-  <!-- Notice modal for unimplemented features (Profile placeholder) -->
+ 
   <div id="noticeBackdrop" class="notice-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="notice-modal" role="document">
       <h3>Coming soon</h3>
